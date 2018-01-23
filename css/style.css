@@ -1,0 +1,281 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Arial, serif;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 22px;
+	background-color: #FFFFFF;
+}
+
+.container {
+	display: table;
+	height: 100%;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;	
+	position: relative;
+	padding: 24px 0;
+	/* outline: 1px solid red; */
+}
+
+.row-main {
+	display: table-row;
+	height: 100%;
+}
+
+header {
+	display: table;
+	position: relative;		
+	padding: 0 0 24px 0;
+	/*outline: 2px dashed yellow;*/
+}
+
+header div {
+	display: table-cell;
+	padding: 0;
+	background-color: #777777;	
+	vertical-align: middle;
+	height: 107px;
+	border-right: 24px solid transparent;
+	background-clip: padding-box;
+}
+
+header div:last-child {
+	border-right: none;
+}
+
+.header-left-block {
+	width: 145px;
+	max-width: 145px;
+	overflow: hidden;
+}
+
+.header-center-block {
+	width: 301px;
+}
+
+.header-right-block {
+	width: 514px;
+	padding-right: 22px;
+	text-align: right;
+}
+
+header::after {
+	content: "";
+	display: block;
+	max-height: 1px;
+	border-bottom: 1px solid #696969;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 960px;
+}
+
+header a {
+	color: #FFFFFF;
+}
+
+header a[href*="tel:"] {
+	text-decoration: none;
+}
+
+/* ===================================================================== */
+
+.content {
+	display: table;
+	position: relative;		
+	padding: 24px 0;
+	/*outline: 2px dashed yellow;*/
+}
+
+.content aside, .content main {
+	display: table-cell;
+	padding: 0;
+	background-color: #FFFFFF;
+	vertical-align: top;
+	height: 200px;
+	border-right: 24px solid transparent;
+	background-clip: padding-box;
+	/*outline: 2px dotted black;*/
+}
+
+.content aside {
+	width: 205px;
+	padding: 0 0 150px 0;
+	position: relative;
+}
+
+.content main {
+	width: 755px;
+	border-right: none;
+}
+
+.aside-navigation {
+	background-color: #777777;
+	padding: 14px;
+}
+
+.aside-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.aside-navigation a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.aside-navigation a:hover {
+	text-decoration: underline;
+}
+
+.aside-navigation a.selected {
+	font-weight: bold;
+}
+
+.aside-navigation a.selected:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+aside div {
+	width: 100%;
+	height: 134px;
+	position: absolute;
+	bottom: 0;
+	background-color: #777777;
+	/*outline: 3px dashed orange;*/
+}
+
+.content-top {
+	height: 209px;
+	background-color: #dcdcdc;
+	margin-bottom: 20px;
+}
+
+.cards-block {
+	font-size: 0;
+	line-height: 0;
+}
+
+.card {
+	display: inline-block;
+	width: 135px;
+	height: 153px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #dcdcdc;
+	font-size: 14px;
+	vertical-align: top;
+	/*outline: 1px dotted red;*/
+}
+
+.card:nth-child(5) {
+	margin-right: 0;
+}
+
+
+.content-bottom {
+	display: table;
+}
+
+.content-bottom div {
+	display: table-cell;
+	color: #777777;
+	background-color: #dcdcdc;
+	padding: 16px 20px;
+	vertical-align: top;
+	height: 200px;	
+	background-clip: padding-box;
+	/*outline: 2px dashed green;*/
+	
+}
+
+.content-bottom-left {
+	width: 385px;
+	border-right: 17px solid transparent;	
+}
+
+.content-bottom-right {
+	width: 370px;
+	border-right: 0;
+}
+
+/* ===================================================================== */
+
+footer {
+	padding: 24px 0 0 0;
+	border-top: 1px solid #696969;
+	/*outline: 3px dashed green;*/
+}
+
+footer > div {
+	display: table-cell;
+	height: 180px;
+	vertical-align: top;
+	background-color: #777777;
+	background-clip: padding-box;
+	/*outline: 2px dashed orange;*/
+}
+
+.footer-left, .footer-center {
+    width: 325px;
+    border-right: 28px solid transparent;
+    padding: 14px 24px;
+    padding-bottom: 10px;
+}
+
+.footer-right {
+	width: 310px;
+	border-right: none;	
+	background-color: transparent;
+}
+
+.footer-right div {
+	background-color: #777777;
+	height: calc(50% - 14px);
+}
+
+.footer-right div:first-child {
+	margin-bottom: 28px;
+}
+
+.footer-left ul {
+	height: 100%;
+	column-count: 2;
+	column-fill: auto;	
+	list-style-type: none;	
+	padding: 0;
+	margin: 0;	
+	/*outline: 2px dashed blue;*/
+}
+
+.footer-center {
+	padding-left: 38px;
+}
+
+.footer-center ul {
+	list-style-type: square;
+	padding: 0;
+	margin: 0;	
+}
+
+
+
+
